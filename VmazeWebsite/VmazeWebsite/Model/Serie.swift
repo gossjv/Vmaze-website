@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct ImageDelOrto: Decodable {
+struct Image: Decodable {
     var original: String
     var medium: String
 }
@@ -28,19 +28,16 @@ struct ImageDelOrto: Decodable {
 struct Serie: Decodable {
     var id: Int?
     var name: String?
-    var image: ImageDelOrto?
-//    var premiered: Date
-//    var ended: Date
+    var image: Image?
+    var premiered: Date
+    var ended: Date
 //    var timeInTheAirs: CFTimeInterval {
 //        CFDateGetTimeIntervalSinceDate(premiered, ended)
 //    }
-//    var image: String {
-//        let medium: String
-//        let original: String
-//    }
+
     var genres: [String]?
     var summary: String?
-//    var episodes: [Episode]?
+    var episodes: [Episode]?
 }
 
 struct SearchSerie: Decodable {

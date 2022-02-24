@@ -28,7 +28,7 @@ class SerieViewController: UIViewController {
         super.viewDidLoad()
         searchBar.delegate = self
         serieTableView.dataSource = self
-        serieTableView.delegate = self
+        serieTableView.delegate = span de papa con crocante de queso, blend de carne 150 grms , jamon, bacon , huevo , queso cheddar , papas snack , lechuga, tomate, cebolla, salsas. incluye papas.elf
         let cellNib = UINib(nibName: "SerieTableViewCell", bundle: nil)
         serieTableView.register(cellNib, forCellReuseIdentifier: "serieListCell")
         tableData()
@@ -79,7 +79,9 @@ extension SerieViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         guard let text = searchBar.text, !text.isEmpty else { return }
-        
+//        let replaced = String(text.map {
+//            $0 == " " ? "+" : $0
+//        })
         NetworkingProvider.shared.getSerieByName(serieName: text) { [weak self] seriesResult in
             guard let serieData = seriesResult else { return }
             
@@ -88,5 +90,12 @@ extension SerieViewController: UISearchBarDelegate {
             self?.serieTableView.reloadData()
         }
     }
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            tableData()
+        }
+    }
 }
+
 

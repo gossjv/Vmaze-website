@@ -16,6 +16,8 @@
 		EBACD74927B56C1F009B91FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBACD74727B56C1F009B91FC /* Main.storyboard */; };
 		EBACD74B27B56C2A009B91FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBACD74A27B56C2A009B91FC /* Assets.xcassets */; };
 		EBACD74E27B56C2A009B91FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBACD74C27B56C2A009B91FC /* LaunchScreen.storyboard */; };
+		EBBE51A927C806B90085D4A2 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE51A727C806B90085D4A2 /* EpisodeTableViewCell.swift */; };
+		EBBE51AA27C806B90085D4A2 /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBE51A827C806B90085D4A2 /* EpisodeTableViewCell.xib */; };
 		EBCB416527B6E70F0020983E /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB416427B6E70F0020983E /* Serie.swift */; };
 		EBCB416A27B6F25C0020983E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB416927B6F25C0020983E /* Episode.swift */; };
 		EBCB416E27B6F4090020983E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB416D27B6F4090020983E /* Person.swift */; };
@@ -36,6 +38,8 @@
 		EBACD74A27B56C2A009B91FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBACD74D27B56C2A009B91FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBACD74F27B56C2A009B91FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBE51A727C806B90085D4A2 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		EBBE51A827C806B90085D4A2 /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		EBCB416427B6E70F0020983E /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		EBCB416927B6F25C0020983E /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		EBCB416D27B6F4090020983E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				EB9BF28C27BAE59B00B1B8CA /* SerieTableViewCell.xib */,
 				EBACD74727B56C1F009B91FC /* Main.storyboard */,
 				EBACD74C27B56C2A009B91FC /* LaunchScreen.storyboard */,
+				EBBE51A827C806B90085D4A2 /* EpisodeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 				EBACD74527B56C1F009B91FC /* SerieViewController.swift */,
 				EB9BF28B27BAE59B00B1B8CA /* SerieTableViewCell.swift */,
 				EBCE53B027C445AA004C8D69 /* SerieDetailsViewController.swift */,
+				EBBE51A727C806B90085D4A2 /* EpisodeTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 				EBACD74E27B56C2A009B91FC /* LaunchScreen.storyboard in Resources */,
 				EBACD74B27B56C2A009B91FC /* Assets.xcassets in Resources */,
 				EBACD74927B56C1F009B91FC /* Main.storyboard in Resources */,
+				EBBE51AA27C806B90085D4A2 /* EpisodeTableViewCell.xib in Resources */,
 				EB9BF28E27BAE59B00B1B8CA /* SerieTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +209,7 @@
 				EBCB416E27B6F4090020983E /* Person.swift in Sources */,
 				EBCB417527B6F8A20020983E /* NetworkingProvider.swift in Sources */,
 				EBCE53B127C445AA004C8D69 /* SerieDetailsViewController.swift in Sources */,
+				EBBE51A927C806B90085D4A2 /* EpisodeTableViewCell.swift in Sources */,
 				EBACD74627B56C1F009B91FC /* SerieViewController.swift in Sources */,
 				EBCB416A27B6F25C0020983E /* Episode.swift in Sources */,
 				EBACD74227B56C1F009B91FC /* AppDelegate.swift in Sources */,

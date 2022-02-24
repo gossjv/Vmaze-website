@@ -10,6 +10,8 @@ import Alamofire
 
 typealias CallbackSerieType = (([Serie]?) -> Void)
 typealias CallbackSearchSerieType = (([SearchSerie]?) -> Void)
+typealias CallbackEpisodeType = (([Episode]?) -> Void)
+
 
 final class NetworkingProvider {
     
@@ -41,4 +43,19 @@ final class NetworkingProvider {
             }
         }
     }
+//    /shows/:id/episodes
+
+    func getEpisode(serieID: Int, callback: @escaping CallbackEpisodeType) {
+        AF.request("\(baseUrl)shows/\(serieID)/episodes", method: .get).validate(statusCode: statusCodeOK).responseDecodable (of: [Episode].self) {
+            response in
+            if let episodes = response.value {
+                callback(episodes)
+                print("tengo el beta")
+            } else {
+                print(response.error?.responseCode ?? "Error")
+            }
+        }
+        
+    }
+    
 }

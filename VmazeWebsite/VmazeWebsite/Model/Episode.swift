@@ -14,5 +14,5 @@ class Episode: Decodable {
     var season: Int
     var number: Int
     var summary: String
-//    var image
+    var image: Image?
 }
