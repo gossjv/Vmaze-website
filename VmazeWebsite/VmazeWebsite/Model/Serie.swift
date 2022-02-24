@@ -9,9 +9,26 @@
 
 import Foundation
 
-class Serie: Decodable {
-    var id: Int
-    var name: String
+struct ImageDelOrto: Decodable {
+    var original: String
+    var medium: String
+}
+
+
+
+
+//■ Name
+//■ Poster
+//■ Days in which the series airs and the time
+//■ Genres
+//■ Summary
+//■ List of episodes separated by season
+
+
+struct Serie: Decodable {
+    var id: Int?
+    var name: String?
+    var image: ImageDelOrto?
 //    var premiered: Date
 //    var ended: Date
 //    var timeInTheAirs: CFTimeInterval {
@@ -22,6 +39,11 @@ class Serie: Decodable {
 //        let original: String
 //    }
     var genres: [String]?
-    var summary: String
+    var summary: String?
 //    var episodes: [Episode]?
+}
+
+struct SearchSerie: Decodable {
+    var score: Double
+    var show: Serie
 }

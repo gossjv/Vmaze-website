@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SerieViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var serieDetailTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +19,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTap(_ sender: Any) {
         NetworkingProvider.shared.getSerie(id: 1)
     }
+    
+    
 }
 

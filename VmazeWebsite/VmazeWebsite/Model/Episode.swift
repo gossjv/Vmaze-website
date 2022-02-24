@@ -9,6 +9,7 @@ import Foundation
 
 class Episode: Decodable {
     
+    var id: Int
     var name: String
     var season: Int
     var number: Int
